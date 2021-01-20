@@ -1,0 +1,1 @@
+curl -s https://beta.01-edu.org/api/graphql-engine/v1/graphql --data '{"query":"{user(where:{githubLogin:{_eq:\"luca_rso\"}}){id}}"}' | cut -d ":" -f4 | cut -d "}" -f1
